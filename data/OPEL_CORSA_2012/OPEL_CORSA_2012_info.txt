@@ -1,0 +1,17 @@
+poss 2583.33 Hz ons70sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons71sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons61sample rate 10666.67 hzpercentage 0.95
+poss 2583.33 Hz ons74sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons77sample rate 10666.67 hzpercentage 0.95
+poss 2583.33 Hz ons71sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons78sample rate 10666.67 hzpercentage 0.97
+poss 2384.62 Hz ons63sample rate 9846.15 hzpercentage 0.92
+poss 2583.33 Hz ons72sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons61sample rate 10666.67 hzpercentage 0.95
+poss 2583.33 Hz ons73sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons64sample rate 10666.67 hzpercentage 0.95
+poss 2583.33 Hz ons72sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons75sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons73sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons72sample rate 10666.67 hzpercentage 0.98
+poss 2583.33 Hz ons73sample rate 10666.67 hzpercentage 0.98

@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "typeinfo": "cpp",
+        "stdio.h": "c",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "cmath": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "wiring_analog_nrf52.c": "cpp"
+    }
+}

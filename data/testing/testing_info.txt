@@ -1,0 +1,576 @@
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.88
+poss 1000.00 Hz ons81sample rate 32000.00 hzpercentage 0.72
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.72
+poss 1750.00 Hz ons76sample rate 32000.00 hzpercentage 0.72
+poss 1000.00 Hz ons67sample rate 32000.00 hzpercentage 0.94
+poss 750.00 Hz ons82sample rate 32000.00 hzpercentage 0.77
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.78
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.75
+poss 750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83
+poss 2000.00 Hz ons77sample rate 32000.00 hzpercentage 0.83
+poss 3250.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.75
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.73
+poss 3250.00 Hz ons82sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.86
+poss 750.00 Hz ons80sample rate 32000.00 hzpercentage 0.80
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.95
+poss 1000.00 Hz ons76sample rate 32000.00 hzpercentage 0.80
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.84
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 2000.00 Hz ons79sample rate 32000.00 hzpercentage 0.70
+poss 1250.00 Hz ons79sample rate 32000.00 hzpercentage 0.86
+poss 3250.00 Hz ons79sample rate 32000.00 hzpercentage 0.73
+poss 2500.00 Hz ons80sample rate 32000.00 hzpercentage 0.73
+poss 2000.00 Hz ons77sample rate 32000.00 hzpercentage 0.88
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.77
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.81
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.78
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.70
+poss 1000.00 Hz ons80sample rate 32000.00 hzpercentage 0.70
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.72
+poss 750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.88
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.86
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.80
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.72
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.77
+poss 500.00 Hz ons77sample rate 32000.00 hzpercentage 0.78
+poss 2000.00 Hz ons81sample rate 32000.00 hzpercentage 0.88
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 2750.00 Hz ons73sample rate 32000.00 hzpercentage 0.73
+poss 2000.00 Hz ons81sample rate 25600.00 hzpercentage 0.92
+poss 1400.00 Hz ons81sample rate 25600.00 hzpercentage 0.77
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.77
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.88
+poss 2500.00 Hz ons83sample rate 32000.00 hzpercentage 0.70
+poss 1750.00 Hz ons72sample rate 32000.00 hzpercentage 0.75
+poss 2400.00 Hz ons82sample rate 25600.00 hzpercentage 0.73
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.77
+poss 1750.00 Hz ons77sample rate 32000.00 hzpercentage 0.83
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.72
+poss 1500.00 Hz ons75sample rate 32000.00 hzpercentage 0.78
+poss 600.00 Hz ons83sample rate 25600.00 hzpercentage 0.73
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.75
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.84
+poss 500.00 Hz ons68sample rate 32000.00 hzpercentage 1.00
+poss 500.00 Hz ons55sample rate 32000.00 hzpercentage 1.00
+poss 1500.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 750.00 Hz ons77sample rate 32000.00 hzpercentage 0.80
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.73
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.91
+poss 1500.00 Hz ons79sample rate 32000.00 hzpercentage 0.89
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.89
+poss 1000.00 Hz ons79sample rate 32000.00 hzpercentage 0.88
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.72
+poss 1500.00 Hz ons81sample rate 32000.00 hzpercentage 0.75
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.89
+poss 750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.77
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.73
+poss 750.00 Hz ons74sample rate 32000.00 hzpercentage 0.88
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.81
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.75
+poss 500.00 Hz ons80sample rate 32000.00 hzpercentage 0.84
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 400.00 Hz ons83sample rate 25600.00 hzpercentage 0.78poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.73
+poss 3250.00 Hz ons82sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.86
+poss 750.00 Hz ons80sample rate 32000.00 hzpercentage 0.80
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.95
+poss 1000.00 Hz ons76sample rate 32000.00 hzpercentage 0.80
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.84
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 2000.00 Hz ons79sample rate 32000.00 hzpercentage 0.70
+poss 1250.00 Hz ons79sample rate 32000.00 hzpercentage 0.86
+poss 3250.00 Hz ons79sample rate 32000.00 hzpercentage 0.73
+poss 2500.00 Hz ons80sample rate 32000.00 hzpercentage 0.73
+poss 2000.00 Hz ons77sample rate 32000.00 hzpercentage 0.88
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.77
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.81
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.78
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.70
+poss 1000.00 Hz ons80sample rate 32000.00 hzpercentage 0.70
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.72
+poss 750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.88
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.86
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.80
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.72
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.77
+poss 500.00 Hz ons77sample rate 32000.00 hzpercentage 0.78
+poss 2000.00 Hz ons81sample rate 32000.00 hzpercentage 0.88
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 2750.00 Hz ons73sample rate 32000.00 hzpercentage 0.73
+poss 2000.00 Hz ons81sample rate 25600.00 hzpercentage 0.92
+poss 1400.00 Hz ons81sample rate 25600.00 hzpercentage 0.77
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.77
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.88
+poss 2500.00 Hz ons83sample rate 32000.00 hzpercentage 0.70
+poss 1750.00 Hz ons72sample rate 32000.00 hzpercentage 0.75
+poss 2400.00 Hz ons82sample rate 25600.00 hzpercentage 0.73
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.77
+poss 1750.00 Hz ons77sample rate 32000.00 hzpercentage 0.83
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.72
+poss 1500.00 Hz ons75sample rate 32000.00 hzpercentage 0.78
+poss 600.00 Hz ons83sample rate 25600.00 hzpercentage 0.73
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.75
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.84
+poss 500.00 Hz ons68sample rate 32000.00 hzpercentage 1.00
+poss 500.00 Hz ons55sample rate 32000.00 hzpercentage 1.00
+poss 1500.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 750.00 Hz ons77sample rate 32000.00 hzpercentage 0.80
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.73
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.91
+poss 1500.00 Hz ons79sample rate 32000.00 hzpercentage 0.89
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.89
+poss 1000.00 Hz ons79sample rate 32000.00 hzpercentage 0.88
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.72
+poss 1500.00 Hz ons81sample rate 32000.00 hzpercentage 0.75
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.89
+poss 750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons81sample rate 32000.00 hzpercentage 0.77
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.73
+poss 750.00 Hz ons74sample rate 32000.00 hzpercentage 0.88
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.83
+poss 1000.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.81
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.78
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.75
+poss 500.00 Hz ons80sample rate 32000.00 hzpercentage 0.84
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.84
+poss 400.00 Hz ons83sample rate 25600.00 hzpercentage 0.78poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 1.00max value 8798.69
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.91max value 5025.85
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 0.97max value 5275.16
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 1.00max value 8798.69
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.91max value 5025.85
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 0.97max value 5275.16
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 1.00max value 8798.69
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.91max value 5025.85
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 0.97max value 5275.16
+poss 1500.00 Hz ons78sample rate 32000.00 hzpercentage 0.89max value 5093.58
+poss 1000.00 Hz ons74sample rate 32000.00 hzpercentage 0.95max value 5608.96
+poss 1000.00 Hz ons79sample rate 32000.00 hzpercentage 0.92max value 5396.19
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.92max value 5391.44
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 1.00max value 8798.69
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.91max value 5025.85
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 0.97max value 5275.16
+poss 1500.00 Hz ons78sample rate 32000.00 hzpercentage 0.89max value 5093.58
+poss 1000.00 Hz ons74sample rate 32000.00 hzpercentage 0.95max value 5608.96
+poss 1000.00 Hz ons79sample rate 32000.00 hzpercentage 0.92max value 5396.19
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.92max value 5391.44
+poss 750.00 Hz ons83sample rate 32000.00 hzpercentage 0.91max value 5003.36
+poss 750.00 Hz ons82sample rate 32000.00 hzpercentage 0.94max value 5001.62
+poss 500.00 Hz ons55sample rate 32000.00 hzpercentage 1.00max value 8575.97
+poss 500.00 Hz ons54sample rate 32000.00 hzpercentage 1.00max value 8586.37
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 1.00max value 8115.79
+poss 400.00 Hz ons60sample rate 25600.00 hzpercentage 0.98max value 7504.95
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.98max value 5405.37
+poss 600.00 Hz ons61sample rate 25600.00 hzpercentage 0.97max value 6653.65
+poss 400.00 Hz ons62sample rate 25600.00 hzpercentage 0.94max value 5909.21
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8621.03
+poss 500.00 Hz ons54sample rate 32000.00 hzpercentage 1.00max value 8587.83
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.91max value 5080.93
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 0.94max value 6140.28
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 1.00max value 8798.69
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.91max value 5025.85
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 0.97max value 5275.16
+poss 1500.00 Hz ons78sample rate 32000.00 hzpercentage 0.89max value 5093.58
+poss 1000.00 Hz ons74sample rate 32000.00 hzpercentage 0.95max value 5608.96
+poss 1000.00 Hz ons79sample rate 32000.00 hzpercentage 0.92max value 5396.19
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.92max value 5391.44
+poss 750.00 Hz ons83sample rate 32000.00 hzpercentage 0.91max value 5003.36
+poss 750.00 Hz ons82sample rate 32000.00 hzpercentage 0.94max value 5001.62
+poss 500.00 Hz ons55sample rate 32000.00 hzpercentage 1.00max value 8575.97
+poss 500.00 Hz ons54sample rate 32000.00 hzpercentage 1.00max value 8586.37
+poss 500.00 Hz ons62sample rate 32000.00 hzpercentage 1.00max value 8115.79
+poss 400.00 Hz ons60sample rate 25600.00 hzpercentage 0.98max value 7504.95
+poss 750.00 Hz ons75sample rate 32000.00 hzpercentage 0.98max value 5405.37
+poss 600.00 Hz ons61sample rate 25600.00 hzpercentage 0.97max value 6653.65
+poss 400.00 Hz ons62sample rate 25600.00 hzpercentage 0.94max value 5909.21
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8621.03
+poss 500.00 Hz ons54sample rate 32000.00 hzpercentage 1.00max value 8587.83
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.91max value 5080.93
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 0.94max value 6140.28
+poss 250.00 Hz ons82sample rate 32000.00 hzpercentage 0.83max value 3848.77
+poss 1750.00 Hz ons80sample rate 32000.00 hzpercentage 0.78max value 3673.74
+poss 2000.00 Hz ons67sample rate 32000.00 hzpercentage 0.75max value 3917.69
+poss 400.00 Hz ons79sample rate 25600.00 hzpercentage 0.78max value 3716.20
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.86max value 3968.35
+poss 1000.00 Hz ons81sample rate 32000.00 hzpercentage 0.81max value 3624.04
+poss 1250.00 Hz ons80sample rate 32000.00 hzpercentage 0.95max value 5762.87
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.75max value 3516.79
+poss 4000.00 Hz ons81sample rate 32000.00 hzpercentage 0.77max value 3526.72
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.70max value 3202.27
+poss 2000.00 Hz ons80sample rate 32000.00 hzpercentage 0.89max value 4273.16
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.73max value 3840.69
+poss 1500.00 Hz ons77sample rate 32000.00 hzpercentage 0.84max value 4590.70
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3757.21
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.73max value 3680.57
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.84max value 4091.40
+poss 1750.00 Hz ons76sample rate 32000.00 hzpercentage 0.86max value 4874.63
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.80max value 3554.96
+poss 1500.00 Hz ons80sample rate 32000.00 hzpercentage 0.83max value 3760.48
+poss 2250.00 Hz ons81sample rate 32000.00 hzpercentage 0.73max value 3580.41
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.86max value 4020.56
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.83max value 4177.31
+poss 1750.00 Hz ons82sample rate 32000.00 hzpercentage 0.72max value 3144.86
+poss 400.00 Hz ons72sample rate 25600.00 hzpercentage 0.81max value 3921.00
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.89max value 4915.74
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.84max value 3915.08
+poss 750.00 Hz ons83sample rate 32000.00 hzpercentage 0.78max value 3544.69
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.70max value 3280.89
+poss 3750.00 Hz ons83sample rate 32000.00 hzpercentage 0.73max value 3356.04
+poss 2750.00 Hz ons75sample rate 32000.00 hzpercentage 0.83max value 4135.25
+poss 1750.00 Hz ons82sample rate 32000.00 hzpercentage 0.72max value 3514.99
+poss 1750.00 Hz ons76sample rate 32000.00 hzpercentage 0.72max value 3341.14
+poss 400.00 Hz ons79sample rate 25600.00 hzpercentage 0.94max value 4861.85
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.89max value 4219.82
+poss 3250.00 Hz ons83sample rate 32000.00 hzpercentage 0.78max value 3407.60
+poss 1500.00 Hz ons77sample rate 32000.00 hzpercentage 0.72max value 3172.12
+poss 500.00 Hz ons76sample rate 32000.00 hzpercentage 0.81max value 4112.87
+poss 3250.00 Hz ons74sample rate 32000.00 hzpercentage 0.75max value 3866.60
+poss 500.00 Hz ons73sample rate 32000.00 hzpercentage 0.78max value 3630.82
+poss 1000.00 Hz ons81sample rate 32000.00 hzpercentage 0.73max value 3251.40
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.75max value 3558.51
+poss 1500.00 Hz ons78sample rate 32000.00 hzpercentage 0.75max value 3290.27
+poss 750.00 Hz ons77sample rate 32000.00 hzpercentage 0.78max value 3972.84
+poss 2500.00 Hz ons81sample rate 32000.00 hzpercentage 0.83max value 4471.99
+poss 1250.00 Hz ons80sample rate 32000.00 hzpercentage 0.70max value 3483.86
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.81max value 3346.38
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.84max value 4011.83
+poss 800.00 Hz ons73sample rate 25600.00 hzpercentage 0.75max value 3555.29
+poss 3250.00 Hz ons78sample rate 32000.00 hzpercentage 0.70max value 3312.03
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.80max value 3608.61
+poss 4500.00 Hz ons76sample rate 32000.00 hzpercentage 0.72max value 3845.90
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.86max value 4056.40
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3196.72
+poss 500.00 Hz ons79sample rate 32000.00 hzpercentage 0.80max value 3706.76
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83max value 4241.92
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.95max value 5187.20
+poss 3250.00 Hz ons76sample rate 32000.00 hzpercentage 0.77max value 3707.01
+poss 500.00 Hz ons64sample rate 32000.00 hzpercentage 0.92max value 4603.41
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3292.20
+poss 750.00 Hz ons79sample rate 32000.00 hzpercentage 0.73max value 3333.86
+poss 3500.00 Hz ons83sample rate 32000.00 hzpercentage 0.77max value 3433.44
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.83max value 4118.96
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.88max value 4439.63
+poss 2750.00 Hz ons79sample rate 32000.00 hzpercentage 0.70max value 3453.54
+poss 250.00 Hz ons82sample rate 32000.00 hzpercentage 0.86max value 3931.49
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.83max value 4083.61
+poss 250.00 Hz ons82sample rate 32000.00 hzpercentage 0.83max value 3848.77
+poss 1750.00 Hz ons80sample rate 32000.00 hzpercentage 0.78max value 3673.74
+poss 2000.00 Hz ons67sample rate 32000.00 hzpercentage 0.75max value 3917.69
+poss 400.00 Hz ons79sample rate 25600.00 hzpercentage 0.78max value 3716.20
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.86max value 3968.35
+poss 1000.00 Hz ons81sample rate 32000.00 hzpercentage 0.81max value 3624.04
+poss 1250.00 Hz ons80sample rate 32000.00 hzpercentage 0.95max value 5762.87
+poss 250.00 Hz ons81sample rate 32000.00 hzpercentage 0.75max value 3516.79
+poss 4000.00 Hz ons81sample rate 32000.00 hzpercentage 0.77max value 3526.72
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.70max value 3202.27
+poss 2000.00 Hz ons80sample rate 32000.00 hzpercentage 0.89max value 4273.16
+poss 1000.00 Hz ons78sample rate 32000.00 hzpercentage 0.73max value 3840.69
+poss 1500.00 Hz ons77sample rate 32000.00 hzpercentage 0.84max value 4590.70
+poss 1500.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3757.21
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.73max value 3680.57
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.84max value 4091.40
+poss 1750.00 Hz ons76sample rate 32000.00 hzpercentage 0.86max value 4874.63
+poss 1250.00 Hz ons82sample rate 32000.00 hzpercentage 0.80max value 3554.96
+poss 1500.00 Hz ons80sample rate 32000.00 hzpercentage 0.83max value 3760.48
+poss 2250.00 Hz ons81sample rate 32000.00 hzpercentage 0.73max value 3580.41
+poss 1250.00 Hz ons81sample rate 32000.00 hzpercentage 0.86max value 4020.56
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.83max value 4177.31
+poss 1750.00 Hz ons82sample rate 32000.00 hzpercentage 0.72max value 3144.86
+poss 400.00 Hz ons72sample rate 25600.00 hzpercentage 0.81max value 3921.00
+poss 500.00 Hz ons78sample rate 32000.00 hzpercentage 0.89max value 4915.74
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.84max value 3915.08
+poss 750.00 Hz ons83sample rate 32000.00 hzpercentage 0.78max value 3544.69
+poss 250.00 Hz ons80sample rate 32000.00 hzpercentage 0.70max value 3280.89
+poss 3750.00 Hz ons83sample rate 32000.00 hzpercentage 0.73max value 3356.04
+poss 2750.00 Hz ons75sample rate 32000.00 hzpercentage 0.83max value 4135.25
+poss 1750.00 Hz ons82sample rate 32000.00 hzpercentage 0.72max value 3514.99
+poss 1750.00 Hz ons76sample rate 32000.00 hzpercentage 0.72max value 3341.14
+poss 400.00 Hz ons79sample rate 25600.00 hzpercentage 0.94max value 4861.85
+poss 2000.00 Hz ons83sample rate 32000.00 hzpercentage 0.89max value 4219.82
+poss 3250.00 Hz ons83sample rate 32000.00 hzpercentage 0.78max value 3407.60
+poss 1500.00 Hz ons77sample rate 32000.00 hzpercentage 0.72max value 3172.12
+poss 500.00 Hz ons76sample rate 32000.00 hzpercentage 0.81max value 4112.87
+poss 3250.00 Hz ons74sample rate 32000.00 hzpercentage 0.75max value 3866.60
+poss 500.00 Hz ons73sample rate 32000.00 hzpercentage 0.78max value 3630.82
+poss 1000.00 Hz ons81sample rate 32000.00 hzpercentage 0.73max value 3251.40
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.75max value 3558.51
+poss 1500.00 Hz ons78sample rate 32000.00 hzpercentage 0.75max value 3290.27
+poss 750.00 Hz ons77sample rate 32000.00 hzpercentage 0.78max value 3972.84
+poss 2500.00 Hz ons81sample rate 32000.00 hzpercentage 0.83max value 4471.99
+poss 1250.00 Hz ons80sample rate 32000.00 hzpercentage 0.70max value 3483.86
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.81max value 3346.38
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.84max value 4011.83
+poss 800.00 Hz ons73sample rate 25600.00 hzpercentage 0.75max value 3555.29
+poss 3250.00 Hz ons78sample rate 32000.00 hzpercentage 0.70max value 3312.03
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.80max value 3608.61
+poss 4500.00 Hz ons76sample rate 32000.00 hzpercentage 0.72max value 3845.90
+poss 2000.00 Hz ons82sample rate 32000.00 hzpercentage 0.86max value 4056.40
+poss 1250.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3196.72
+poss 500.00 Hz ons79sample rate 32000.00 hzpercentage 0.80max value 3706.76
+poss 1750.00 Hz ons81sample rate 32000.00 hzpercentage 0.83max value 4241.92
+poss 1000.00 Hz ons82sample rate 25600.00 hzpercentage 0.95max value 5187.20
+poss 3250.00 Hz ons76sample rate 32000.00 hzpercentage 0.77max value 3707.01
+poss 500.00 Hz ons64sample rate 32000.00 hzpercentage 0.92max value 4603.41
+poss 250.00 Hz ons83sample rate 32000.00 hzpercentage 0.72max value 3292.20
+poss 750.00 Hz ons79sample rate 32000.00 hzpercentage 0.73max value 3333.86
+poss 3500.00 Hz ons83sample rate 32000.00 hzpercentage 0.77max value 3433.44
+poss 500.00 Hz ons82sample rate 32000.00 hzpercentage 0.83max value 4118.96
+poss 500.00 Hz ons83sample rate 32000.00 hzpercentage 0.88max value 4439.63
+poss 2750.00 Hz ons79sample rate 32000.00 hzpercentage 0.70max value 3453.54
+poss 250.00 Hz ons82sample rate 32000.00 hzpercentage 0.86max value 3931.49
+poss 1750.00 Hz ons83sample rate 32000.00 hzpercentage 0.83max value 4083.61
+poss 400.00 Hz ons81sample rate 25600.00 hzpercentage 0.91max value 3872.36
+poss 600.00 Hz ons56sample rate 25600.00 hzpercentage 0.95max value 5963.11
+poss 400.00 Hz ons72sample rate 25600.00 hzpercentage 0.98max value 7082.70
+poss 400.00 Hz ons53sample rate 25600.00 hzpercentage 0.98max value 6264.83
+poss 400.00 Hz ons50sample rate 25600.00 hzpercentage 1.00max value 7159.31
+poss 400.00 Hz ons70sample rate 25600.00 hzpercentage 0.98max value 6555.89
+poss 400.00 Hz ons53sample rate 25600.00 hzpercentage 0.98max value 6502.60
+poss 400.00 Hz ons67sample rate 25600.00 hzpercentage 0.98max value 6362.73
+poss 600.00 Hz ons61sample rate 25600.00 hzpercentage 0.94max value 6225.36
+poss 400.00 Hz ons70sample rate 25600.00 hzpercentage 0.98max value 6591.14
+poss 400.00 Hz ons71sample rate 25600.00 hzpercentage 0.98max value 6754.95
+poss 400.00 Hz ons81sample rate 25600.00 hzpercentage 0.91max value 3872.36
+poss 600.00 Hz ons56sample rate 25600.00 hzpercentage 0.95max value 5963.11
+poss 400.00 Hz ons72sample rate 25600.00 hzpercentage 0.98max value 7082.70
+poss 400.00 Hz ons53sample rate 25600.00 hzpercentage 0.98max value 6264.83
+poss 400.00 Hz ons50sample rate 25600.00 hzpercentage 1.00max value 7159.31
+poss 400.00 Hz ons70sample rate 25600.00 hzpercentage 0.98max value 6555.89
+poss 400.00 Hz ons53sample rate 25600.00 hzpercentage 0.98max value 6502.60
+poss 400.00 Hz ons67sample rate 25600.00 hzpercentage 0.98max value 6362.73
+poss 600.00 Hz ons61sample rate 25600.00 hzpercentage 0.94max value 6225.36
+poss 400.00 Hz ons70sample rate 25600.00 hzpercentage 0.98max value 6591.14
+poss 400.00 Hz ons71sample rate 25600.00 hzpercentage 0.98max value 6754.95
+poss 200.00 Hz ons77sample rate 25600.00 hzpercentage 0.91max value 4477.90
+poss 600.00 Hz ons83sample rate 25600.00 hzpercentage 0.92max value 4591.30
+poss 500.00 Hz ons74sample rate 21333.33 hzpercentage 0.98max value 5310.15
+poss 1600.00 Hz ons70sample rate 25600.00 hzpercentage 0.91max value 4297.38
+poss 400.00 Hz ons83sample rate 25600.00 hzpercentage 0.92max value 4599.02
+poss 400.00 Hz ons83sample rate 25600.00 hzpercentage 0.92max value 4340.83
+poss 400.00 Hz ons65sample rate 25600.00 hzpercentage 0.92max value 5444.15
+poss 800.00 Hz ons82sample rate 25600.00 hzpercentage 0.97max value 5411.44
+poss 400.00 Hz ons80sample rate 25600.00 hzpercentage 0.91max value 4661.09
+poss 400.00 Hz ons82sample rate 25600.00 hzpercentage 0.94max value 5162.96
+poss 200.00 Hz ons78sample rate 25600.00 hzpercentage 0.91max value 4714.74
+poss 800.00 Hz ons80sample rate 25600.00 hzpercentage 0.86max value 5701.63
+poss 600.00 Hz ons59sample rate 25600.00 hzpercentage 0.92max value 6330.18
+poss 1000.00 Hz ons78sample rate 25600.00 hzpercentage 0.84max value 5290.23
+poss 2000.00 Hz ons64sample rate 25600.00 hzpercentage 0.95max value 8489.27
+poss 2600.00 Hz ons68sample rate 25600.00 hzpercentage 0.88max value 6494.22
+poss 400.00 Hz ons74sample rate 25600.00 hzpercentage 0.94max value 7145.11
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 17464.54
+poss 2166.67 Hz ons63sample rate 21333.33 hzpercentage 0.94max value 17501.47
+poss 2666.67 Hz ons81sample rate 21333.33 hzpercentage 0.94max value 13429.03
+poss 2666.67 Hz ons60sample rate 21333.33 hzpercentage 0.91max value 12370.92
+poss 500.00 Hz ons57sample rate 21333.33 hzpercentage 0.97max value 17210.03
+poss 500.00 Hz ons82sample rate 21333.33 hzpercentage 0.83max value 10712.66
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 0.98max value 8553.19
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8753.65
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8758.68
+poss 500.00 Hz ons63sample rate 32000.00 hzpercentage 0.97max value 8192.04
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 0.97max value 8342.63
+poss 500.00 Hz ons64sample rate 32000.00 hzpercentage 0.97max value 8149.68
+poss 1600.00 Hz ons64sample rate 25600.00 hzpercentage 0.83max value 5060.03
+poss 2250.00 Hz ons61sample rate 32000.00 hzpercentage 0.95max value 8818.70
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8797.70
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8772.11
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8819.43
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8880.88
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8788.54
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8820.08
+poss 2750.00 Hz ons65sample rate 32000.00 hzpercentage 0.94max value 7781.60
+poss 2750.00 Hz ons62sample rate 32000.00 hzpercentage 0.92max value 7734.42
+poss 2750.00 Hz ons63sample rate 32000.00 hzpercentage 0.94max value 7737.27
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 0.98max value 8553.19
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8753.65
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8758.68
+poss 500.00 Hz ons63sample rate 32000.00 hzpercentage 0.97max value 8192.04
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 0.97max value 8342.63
+poss 500.00 Hz ons64sample rate 32000.00 hzpercentage 0.97max value 8149.68
+poss 1600.00 Hz ons64sample rate 25600.00 hzpercentage 0.83max value 5060.03
+poss 2250.00 Hz ons61sample rate 32000.00 hzpercentage 0.95max value 8818.70
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8797.70
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8772.11
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8819.43
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8880.88
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8788.54
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8820.08
+poss 2750.00 Hz ons65sample rate 32000.00 hzpercentage 0.94max value 7781.60
+poss 2750.00 Hz ons62sample rate 32000.00 hzpercentage 0.92max value 7734.42
+poss 2750.00 Hz ons63sample rate 32000.00 hzpercentage 0.94max value 7737.27
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8760.69
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8818.26
+poss 2250.00 Hz ons60sample rate 32000.00 hzpercentage 0.95max value 8780.53
+poss 2750.00 Hz ons63sample rate 32000.00 hzpercentage 0.94max value 7624.61
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 0.91max value 6391.55
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 0.98max value 8553.19
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8753.65
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8758.68
+poss 500.00 Hz ons63sample rate 32000.00 hzpercentage 0.97max value 8192.04
+poss 500.00 Hz ons66sample rate 32000.00 hzpercentage 0.97max value 8342.63
+poss 500.00 Hz ons64sample rate 32000.00 hzpercentage 0.97max value 8149.68
+poss 1600.00 Hz ons64sample rate 25600.00 hzpercentage 0.83max value 5060.03
+poss 2250.00 Hz ons61sample rate 32000.00 hzpercentage 0.95max value 8818.70
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8797.70
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8772.11
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8819.43
+poss 2250.00 Hz ons64sample rate 32000.00 hzpercentage 0.95max value 8880.88
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8788.54
+poss 2250.00 Hz ons62sample rate 32000.00 hzpercentage 0.95max value 8820.08
+poss 2750.00 Hz ons65sample rate 32000.00 hzpercentage 0.94max value 7781.60
+poss 2750.00 Hz ons62sample rate 32000.00 hzpercentage 0.92max value 7734.42
+poss 2750.00 Hz ons63sample rate 32000.00 hzpercentage 0.94max value 7737.27
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 1.00max value 8760.69
+poss 2250.00 Hz ons63sample rate 32000.00 hzpercentage 0.95max value 8818.26
+poss 2250.00 Hz ons60sample rate 32000.00 hzpercentage 0.95max value 8780.53
+poss 2750.00 Hz ons63sample rate 32000.00 hzpercentage 0.94max value 7624.61
+poss 500.00 Hz ons67sample rate 32000.00 hzpercentage 0.91max value 6391.55
+poss 500.00 Hz ons67sample rate 21333.33 hzpercentage 0.98max value 17218.30
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.98max value 17285.51
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.98max value 16844.34
+poss 500.00 Hz ons67sample rate 21333.33 hzpercentage 0.98max value 17218.30
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.98max value 17285.51
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.98max value 16844.34
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17748.63
+poss 2166.67 Hz ons65sample rate 21333.33 hzpercentage 0.95max value 17145.79
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17654.23
+poss 2166.67 Hz ons68sample rate 21333.33 hzpercentage 0.94max value 16596.59
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17331.97
+poss 500.00 Hz ons67sample rate 21333.33 hzpercentage 0.98max value 17218.30
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.98max value 17285.51
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.98max value 16844.34
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17748.63
+poss 2166.67 Hz ons65sample rate 21333.33 hzpercentage 0.95max value 17145.79
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17654.23
+poss 2166.67 Hz ons68sample rate 21333.33 hzpercentage 0.94max value 16596.59
+poss 2166.67 Hz ons64sample rate 21333.33 hzpercentage 0.95max value 17331.97
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14620.50
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14535.25
+poss 2666.67 Hz ons69sample rate 21333.33 hzpercentage 0.92max value 14414.91
+poss 2666.67 Hz ons70sample rate 21333.33 hzpercentage 0.92max value 14507.14
+poss 2666.67 Hz ons69sample rate 21333.33 hzpercentage 0.92max value 14755.56
+poss 2666.67 Hz ons73sample rate 21333.33 hzpercentage 0.92max value 14806.98
+poss 2666.67 Hz ons68sample rate 21333.33 hzpercentage 0.92max value 14428.64
+poss 2666.67 Hz ons70sample rate 21333.33 hzpercentage 0.92max value 14500.55
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14780.88
+poss 2666.67 Hz ons70sample rate 21333.33 hzpercentage 0.92max value 14720.09
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14132.06
+poss 2666.67 Hz ons69sample rate 21333.33 hzpercentage 0.92max value 14124.26
+poss 2666.67 Hz ons70sample rate 21333.33 hzpercentage 0.92max value 14712.57
+poss 2666.67 Hz ons69sample rate 21333.33 hzpercentage 0.92max value 14527.71
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14451.95
+poss 2666.67 Hz ons72sample rate 21333.33 hzpercentage 0.92max value 14549.97
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.97max value 16652.53
+poss2 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.97max value 40.75sum 0.69
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 17465.55
+poss2 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 18540.23sum 0.46
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 17438.12
+poss2 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 18580.98sum 0.46
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 17438.12
+poss2 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.98max value 18580.98sum 0.46
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.95max value 16690.75
+poss2 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.95max value 18580.98sum 0.74
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.95max value 16690.75
+poss2 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.95max value 18580.98sum 0.74
+poss 500.00 Hz ons57sample rate 21333.33 hzpercentage 0.97max value 17304.61
+poss 2428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 11456.28
+poss 2666.67 Hz ons71sample rate 21333.33 hzpercentage 0.92max value 14696.38
+poss 2166.67 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 16254.05
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.84max value 10677.08
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.83max value 10864.25
+poss 428.57 Hz ons60sample rate 18285.71 hzpercentage 0.88max value 10242.02
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 12133.71
+poss 500.00 Hz ons64sample rate 21333.33 hzpercentage 0.81max value 9883.49
+poss 500.00 Hz ons68sample rate 21333.33 hzpercentage 0.81max value 10691.43
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.81max value 10890.41
+poss 428.57 Hz ons72sample rate 18285.71 hzpercentage 0.84max value 10312.16
+poss 500.00 Hz ons70sample rate 21333.33 hzpercentage 0.88max value 11028.24
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.88max value 11712.13
+poss 500.00 Hz ons72sample rate 21333.33 hzpercentage 0.81max value 10945.32
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.91max value 11119.25
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.91max value 11871.60
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.86max value 11153.10
+poss 428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 12890.55
+poss 833.33 Hz ons71sample rate 21333.33 hzpercentage 0.89max value 10682.82
+poss 428.57 Hz ons66sample rate 18285.71 hzpercentage 0.84max value 10209.94
+poss 2428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 11456.28
+poss 2666.67 Hz ons71sample rate 21333.33 hzpercentage 0.92max value 14696.38
+poss 2166.67 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 16254.05
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.84max value 10677.08
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.83max value 10864.25
+poss 428.57 Hz ons60sample rate 18285.71 hzpercentage 0.88max value 10242.02
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 12133.71
+poss 500.00 Hz ons64sample rate 21333.33 hzpercentage 0.81max value 9883.49
+poss 500.00 Hz ons68sample rate 21333.33 hzpercentage 0.81max value 10691.43
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.81max value 10890.41
+poss 428.57 Hz ons72sample rate 18285.71 hzpercentage 0.84max value 10312.16
+poss 500.00 Hz ons70sample rate 21333.33 hzpercentage 0.88max value 11028.24
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.88max value 11712.13
+poss 500.00 Hz ons72sample rate 21333.33 hzpercentage 0.81max value 10945.32
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.91max value 11119.25
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.91max value 11871.60
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.86max value 11153.10
+poss 428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 12890.55
+poss 833.33 Hz ons71sample rate 21333.33 hzpercentage 0.89max value 10682.82
+poss 428.57 Hz ons66sample rate 18285.71 hzpercentage 0.84max value 10209.94
+poss 2428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 11456.28
+poss 2666.67 Hz ons71sample rate 21333.33 hzpercentage 0.92max value 14696.38
+poss 2166.67 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 16254.05
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.84max value 10677.08
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.83max value 10864.25
+poss 428.57 Hz ons60sample rate 18285.71 hzpercentage 0.88max value 10242.02
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 12133.71
+poss 500.00 Hz ons64sample rate 21333.33 hzpercentage 0.81max value 9883.49
+poss 500.00 Hz ons68sample rate 21333.33 hzpercentage 0.81max value 10691.43
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.81max value 10890.41
+poss 428.57 Hz ons72sample rate 18285.71 hzpercentage 0.84max value 10312.16
+poss 500.00 Hz ons70sample rate 21333.33 hzpercentage 0.88max value 11028.24
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.88max value 11712.13
+poss 500.00 Hz ons72sample rate 21333.33 hzpercentage 0.81max value 10945.32
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.91max value 11119.25
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.91max value 11871.60
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.86max value 11153.10
+poss 428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 12890.55
+poss 833.33 Hz ons71sample rate 21333.33 hzpercentage 0.89max value 10682.82
+poss 428.57 Hz ons66sample rate 18285.71 hzpercentage 0.84max value 10209.94
+poss 2428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 11456.28
+poss 2666.67 Hz ons71sample rate 21333.33 hzpercentage 0.92max value 14696.38
+poss 2166.67 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 16254.05
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.84max value 10677.08
+poss 500.00 Hz ons61sample rate 21333.33 hzpercentage 0.83max value 10864.25
+poss 428.57 Hz ons60sample rate 18285.71 hzpercentage 0.88max value 10242.02
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.94max value 12133.71
+poss 500.00 Hz ons64sample rate 21333.33 hzpercentage 0.81max value 9883.49
+poss 500.00 Hz ons68sample rate 21333.33 hzpercentage 0.81max value 10691.43
+poss 500.00 Hz ons71sample rate 21333.33 hzpercentage 0.81max value 10890.41
+poss 428.57 Hz ons72sample rate 18285.71 hzpercentage 0.84max value 10312.16
+poss 500.00 Hz ons70sample rate 21333.33 hzpercentage 0.88max value 11028.24
+poss 500.00 Hz ons63sample rate 21333.33 hzpercentage 0.88max value 11712.13
+poss 500.00 Hz ons72sample rate 21333.33 hzpercentage 0.81max value 10945.32
+poss 500.00 Hz ons66sample rate 21333.33 hzpercentage 0.91max value 11119.25
+poss 500.00 Hz ons65sample rate 21333.33 hzpercentage 0.91max value 11871.60
+poss 500.00 Hz ons73sample rate 21333.33 hzpercentage 0.86max value 11153.10
+poss 428.57 Hz ons70sample rate 18285.71 hzpercentage 0.89max value 12890.55
+poss 833.33 Hz ons71sample rate 21333.33 hzpercentage 0.89max value 10682.82
+poss 428.57 Hz ons66sample rate 18285.71 hzpercentage 0.84max value 10209.94

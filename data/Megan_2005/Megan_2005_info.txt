@@ -1,0 +1,67 @@
+poss 1833.33 Hz ons74sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons68sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons67sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons83sample rate 10666.67 hzpercentage 0.94
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons71sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons71sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons82sample rate 10666.67 hzpercentage 0.94
+poss 1692.31 Hz ons69sample rate 9846.15 hzpercentage 0.89
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1769.23 Hz ons69sample rate 9846.15 hzpercentage 0.92
+poss 1769.23 Hz ons72sample rate 9846.15 hzpercentage 0.88
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons80sample rate 10666.67 hzpercentage 0.94
+poss 1833.33 Hz ons77sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons83sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons70sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons71sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons71sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1833.33 Hz ons69sample rate 10666.67 hzpercentage 0.95
+poss 1692.31 Hz ons73sample rate 9846.15 hzpercentage 0.89
+poss 83.33 Hz ons81sample rate 10666.67 hzpercentage 0.97
+poss 83.33 Hz ons81sample rate 10666.67 hzpercentage 0.92
+poss 76.92 Hz ons75sample rate 9846.15 hzpercentage 0.92
+poss 1833.33 Hz ons80sample rate 10666.67 hzpercentage 0.95
+poss 4615.38 Hz ons81sample rate 9846.15 hzpercentage 0.52
+poss 83.33 Hz ons65sample rate 10666.67 hzpercentage 1.00
+poss 333.33 Hz ons82sample rate 10666.67 hzpercentage 0.50
+poss 166.67 Hz ons53sample rate 10666.67 hzpercentage 1.00
+poss 76.92 Hz ons75sample rate 9846.15 hzpercentage 0.94
+poss 83.33 Hz ons75sample rate 10666.67 hzpercentage 0.97
+poss 83.33 Hz ons60sample rate 10666.67 hzpercentage 0.91
+poss 166.67 Hz ons71sample rate 10666.67 hzpercentage 0.91
+poss 250.00 Hz ons61sample rate 10666.67 hzpercentage 0.94
+poss 83.33 Hz ons81sample rate 10666.67 hzpercentage 0.97
+ *  Terminal will be reused by tasks, press any key to close it. 
+ *  Executing task: platformio device monitor 
+--- Terminal on /dev/cu.usbserial-0001 | 115200 8-N-1
+--- Available filters and text transformations: colorize, debug, default, direct, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at https://bit.ly/pio-monitor-filters
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+poss 4846.15 Hz ons80sample rate 9846.15 hzpercentage 0.42
+poss 250.00 Hz ons74sample rate 10666.67 hzpercentage 0.67
+poss 307.69 Hz ons82sample rate 9846.15 hzpercentage 0.52
+poss 76.92 Hz ons64sample rate 9846.15 hzpercentage 0.98
+poss 916.67 Hz ons83sample rate 10666.67 hzpercentage 0.41
+poss 153.85 Hz ons49sample rate 9846.15 hzpercentage 0.98
+poss 166.67 Hz ons82sample rate 10666.67 hzpercentage 0.88
+poss 76.92 Hz ons78sample rate 9846.15 hzpercentage 1.00
+poss 76.92 Hz ons56sample rate 9846.15 hzpercentage 1.00
+poss 230.77 Hz ons80sample rate 9846.15 hzpercentage 0.47
+poss 83.33 Hz ons57sample rate 10666.67 hzpercentage 0.84
+poss 1083.33 Hz ons82sample rate 10666.67 hzpercentage 0.50
+poss 4166.67 Hz ons82sample rate 10666.67 hzpercentage 0.45
+poss 846.15 Hz ons82sample rate 9846.15 hzpercentage 0.42
+poss 1000.00 Hz ons78sample rate 10666.67 hzpercentage 0.45
+poss 76.92 Hz ons64sample rate 9846.15 hzpercentage 0.86
+poss 4846.15 Hz ons81sample rate 9846.15 hzpercentage 0.70
+poss 83.33 Hz ons69sample rate 10666.67 hzpercentage 1.00

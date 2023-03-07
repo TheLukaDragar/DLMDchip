@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "PlatformIO",
+			"task": "Monitor (waveshare_ble400)",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Monitor (waveshare_ble400)",
+			"presentation": {
+                "panel": "shared"
+            }
+			
+		}
+	]
+}

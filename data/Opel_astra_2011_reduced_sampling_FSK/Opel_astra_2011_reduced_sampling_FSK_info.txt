@@ -1,0 +1,14 @@
+poss 1000.00 Hz ons83sample rate 6095.24 hzpercentage 0.73
+poss 1000.00 Hz ons80sample rate 6095.24 hzpercentage 0.86
+poss 954.55 Hz ons82sample rate 5818.18 hzpercentage 0.75
+poss 954.55 Hz ons77sample rate 5818.18 hzpercentage 0.78
+poss 1000.00 Hz ons79sample rate 6095.24 hzpercentage 0.70
+poss 136.36 Hz ons74sample rate 5818.18 hzpercentage 0.92
+poss 2142.86 Hz ons78sample rate 6095.24 hzpercentage 0.91
+poss 2045.45 Hz ons80sample rate 5818.18 hzpercentage 0.91
+poss 954.55 Hz ons79sample rate 5818.18 hzpercentage 0.73
+poss 954.55 Hz ons83sample rate 5818.18 hzpercentage 0.88
+poss 2045.45 Hz ons81sample rate 5818.18 hzpercentage 0.89
+poss 2095.24 Hz ons82sample rate 6095.24 hzpercentage 0.91
+poss 954.55 Hz ons83sample rate 5818.18 hzpercentage 0.84
+poss 20

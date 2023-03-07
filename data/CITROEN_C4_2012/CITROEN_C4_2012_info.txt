@@ -1,0 +1,8 @@
+poss 500.00 Hz ons65sample rate 10666.67 hzpercentage 0.95
+poss 461.54 Hz ons57sample rate 9846.15 hzpercentage 0.95
+poss 461.54 Hz ons65sample rate 9846.15 hzpercentage 0.92
+poss 500.00 Hz ons61sample rate 10666.67 hzpercentage 0.95
+poss 461.54 Hz ons62sample rate 9846.15 hzpercentage 0.94
+poss 500.00 Hz ons60sample rate 10666.67 hzpercentage 0.95
+poss 500.00 Hz ons66sample rate 10666.67 hzpercentage 0.95
+poss 500.00 Hz ons61sample rate 10666.67 hzpercentage 0.95
