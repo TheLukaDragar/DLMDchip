@@ -104,7 +104,7 @@ bool ISRMX::init()
   //fsk_config();
 
 
-    return true;
+    return ok;
 }
 
 bool ISRMX::change_modulation(uint8_t modulation)

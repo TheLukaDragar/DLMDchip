@@ -52,10 +52,21 @@ extern "C"
 
 static const uint8_t _SS = 30;
 static const uint8_t _MOSI = PIN_SPI_MOSI;
-static const uint8_t _MISO = PIN_SPI_MISO;
-static const uint8_t _SCK = PIN_SPI_SCK;
-static const uint8_t FDATA = PIN_A2;
-static const uint8_t ADATA = PIN_A3;
+static const uint8_t _MISO = 25;//PIN_SPI_MISO;
+static const uint8_t _SCK = 23;  //PIN_SPI_SCK; on dev board
+static const uint8_t FDATA = PIN_A3;
+static const uint8_t ADATA = PIN_A2;
+
+//define motor pins
+#define MOTOR1_PIN1 12
+#define MOTOR1_PIN2 13
+#define MOTOR2_PIN1 15
+#define MOTOR2_PIN2 14
+#define MOTORS_SLEEP 11
+#define MOTORS_ERROR 10
+
+#define MID_SENSOR1 8
+#define MID_SENSOR2 16
 
 MyGenericSPI hardware_spi2; // using default constructor spi settings
 ISRMX isrmx(_SS, NIRQ, hardware_spi2);
@@ -90,7 +101,28 @@ enum KeyCalibrationState
   KEY_CALIBRATION_STATE_CALIBRATED_STEP_DONE,
 };
 
+enum KeySensorStatus
+ {
+SENSOR_OK,
+SENSOR_ERROR
+};
+
+//manual motor control for both motors forwards and backwards
+enum ManualMotorControl {
+  MOTOR1_FORWARD,
+  MOTOR1_BACKWARD,
+  MOTOR2_FORWARD,
+  MOTOR2_BACKWARD,
+};
+
+
+uint8_t mid_sensor1 = 0;
+uint8_t mid_sensor2 = 0;
+
+
+
 KeyCalibrationState key_calibration_state = KEY_CALIBRATION_STATE_NOT_CALIBRATED;
+KeySensorStatus key_sensor_status = SENSOR_ERROR;
 
 BLEService keybotService = BLEService("00001815-0000-1000-8000-00805F9B34FB");
 // create challenge characteristic
@@ -110,7 +142,31 @@ BLEDescriptor authDescriptor = BLEDescriptor("2901", "Auth");
 BLECharCharacteristic calibrateCharacteristic("00002a3d-0000-1000-8000-00805f9b34fe", BLERead | BLEWrite | BLENotify);
 
 BLEDescriptor CalibrationDescriptor = BLEDescriptor("2901", "Used for calibration");
+
+BLECharCharacteristic sensorStatusCharacteristic("00002a3d-0000-1000-8000-00805f9b34fd", BLERead | BLENotify);
+
+BLEDescriptor sensorStatusDescriptor = BLEDescriptor("2901", "Sensor status");
+
 BLECharCharacteristic calibrateChangeModeCharacteristic("00002a3d-0000-1000-8000-00805f9b34ff", BLERead | BLEWrite | BLENotify);
+
+//test characteristic with response
+BLECharCharacteristic testCharacteristic("00002a3d-0000-1000-8000-00805f9b34f0", BLERead | BLEWrite | BLENotify);
+
+BLEDescriptor testDescriptor = BLEDescriptor("2901", "Test");
+
+
+//manaul motor control characteristic
+BLECharCharacteristic manualMotorControlCharacteristic("00002a3d-0000-1000-8000-00805f9b34f1", BLERead | BLEWrite | BLENotify);
+
+BLEDescriptor manualMotorControlDescriptor = BLEDescriptor("2901", "Manual motor control");
+
+//mid sensor 1 characteristic
+BLECharCharacteristic midSensorsCharacteristic("00002a3d-0000-1000-8000-00805f9b34f2", BLERead | BLENotify);
+
+BLEDescriptor midSensorsDescriptor = BLEDescriptor("2901", "Mid sensor 1 and 2");
+
+
+
 
 
 void blePeripheralDisconnectHandler(BLECentral &central);
@@ -119,7 +175,11 @@ void blePeripheralConnectHandler(BLECentral &central);
 void blinkLed(int times, int timedelay);
 void solutionCharacteristicWritten(BLECentral &central, BLECharacteristic &characteristic);
 void calibrateChangeModeWritten(BLECentral &central, BLECharacteristic &characteristic);
+void testCharacteristicWritten(BLECentral &central, BLECharacteristic &characteristic);
+void manualMotorControlCharacteristicWritten(BLECentral &central, BLECharacteristic &characteristic);
 
+
+void updateMidSensors();
 uint32_t getRandom32();
 static void fft_process(float32_t *p_input,
                         const arm_cfft_instance_f32 *p_input_struct,
@@ -134,6 +194,9 @@ static void fft_process(float32_t *p_input,
 bool fft(void *opaque);
 uint32_t fastAnalogRead(uint32_t pin);
 
+void roll_signal(q7_t *signal, int n, int shift);
+
+
 // timer
 Timer<> fft_timer;
 
@@ -142,7 +205,7 @@ void setup()
   Serial.begin(115200);
 
   bleSerial.setAppearance(BLE_APPEARANCE_GENERIC_REMOTE_CONTROL);
-  bleSerial.setLocalName("KeyBot_000000000000");
+  bleSerial.setLocalName("KeyBot_000000000001");
   bleSerial.setAdvertisedServiceUuid(keybotService.uuid());
 
   bleSerial.setEventHandler(BLEConnected, blePeripheralConnectHandler);
@@ -151,6 +214,8 @@ void setup()
   // listen for write events
   solutionCharacteristic.setEventHandler(BLEWritten, solutionCharacteristicWritten);
   calibrateChangeModeCharacteristic.setEventHandler(BLEWritten, calibrateChangeModeWritten);
+  testCharacteristic.setEventHandler(BLEWritten, testCharacteristicWritten);
+  manualMotorControlCharacteristic.setEventHandler(BLEWritten, manualMotorControlCharacteristicWritten);
   bleSerial.addAttribute(keybotService);
   bleSerial.addAttribute(challengeCharacteristic);
   bleSerial.addAttribute(challengeDescriptor);
@@ -160,18 +225,67 @@ void setup()
   bleSerial.addAttribute(authDescriptor);
   bleSerial.addAttribute(calibrateCharacteristic);
   bleSerial.addAttribute(CalibrationDescriptor);
+  bleSerial.addAttribute(sensorStatusCharacteristic);
+  bleSerial.addAttribute(sensorStatusDescriptor);
   bleSerial.addAttribute(calibrateChangeModeCharacteristic);
+  // bleSerial.addAttribute(testCharacteristic);
+  // bleSerial.addAttribute(testDescriptor);
+  bleSerial.addAttribute(manualMotorControlCharacteristic);
+  bleSerial.addAttribute(manualMotorControlDescriptor);
+  bleSerial.addAttribute(midSensorsCharacteristic);
+  bleSerial.addAttribute(midSensorsDescriptor);
+
+
 
 
   authCharacteristic.setValue('0');
   calibrateCharacteristic.setValue(key_calibration_state+48);
+  sensorStatusCharacteristic.setValue(key_sensor_status+48);
   calibrateChangeModeCharacteristic.setValue('0');
+  testCharacteristic.setValue('0');
+  manualMotorControlCharacteristic.setValue('0');
+ 
   bleSerial.begin();
 
   // set key
   memcpy(m_ecb_data.key, AES_KEY, 16);
 
   pinMode(LED_PIN, OUTPUT);
+
+  //setup motors
+  pinMode(MOTOR1_PIN1, OUTPUT);
+  pinMode(MOTOR1_PIN2, OUTPUT);
+  pinMode(MOTOR2_PIN1, OUTPUT);
+  pinMode(MOTOR2_PIN2, OUTPUT);
+  pinMode(MOTORS_SLEEP, OUTPUT);
+
+  //set all to low
+  digitalWrite(MOTOR1_PIN1, LOW);
+  digitalWrite(MOTOR1_PIN2, LOW);
+  digitalWrite(MOTOR2_PIN1, LOW);
+  digitalWrite(MOTOR2_PIN2, LOW);
+  digitalWrite(MOTORS_SLEEP, HIGH);
+
+  //MID SENSOR
+  pinMode(MID_SENSOR1, INPUT);
+  pinMode(MID_SENSOR2, INPUT);
+
+  mid_sensor1= digitalRead(MID_SENSOR1);
+  mid_sensor2= digitalRead(MID_SENSOR2);
+
+  //set midSensorsCharacteristic 0 if both sensors are 0 and 1 if first is 1 and second is 0 and 2 if first is 0 and second is 1
+  midSensorsCharacteristic.setValue(mid_sensor1+mid_sensor2*2+48);
+
+
+
+
+
+
+
+
+
+
+
   // setup S3NSOR
   pinMode(FDATA, INPUT);
   pinMode(ADATA, INPUT);
@@ -180,12 +294,16 @@ void setup()
 
   if (ok)
   {
+    key_sensor_status = SENSOR_OK;
     Serial.println("isrmx init ok");
   }
   else
   {
+    key_sensor_status = SENSOR_ERROR;
     Serial.println("isrmx init failed");
   }
+  sensorStatusCharacteristic.setValue(key_sensor_status+48);
+
 
   // calib
   for (int i = 0; i < 64; i++)
@@ -210,16 +328,17 @@ void setup()
   blinkLed(1, 1000);
 }
 
+
+
 void loop()
 {
   fft_timer.tick(); // read data from sensor
+  updateMidSensors();
 
 // digitalWrite(LED_PIN, LOW);
 // digitalWrite(LED_PIN, HIGH);
 // digitalWrite(LED_PIN, LOW);//40us
 
-
-  
 
   if (DO_SLEEP)
   {
@@ -294,6 +413,32 @@ void updateChallenge()
   challengeCharacteristic.setValue(challenge, 16);
 }
 
+void  updateMidSensors()
+{
+  // read mid sensors
+  int m1 = digitalRead(MID_SENSOR1);
+  int m2 = digitalRead(MID_SENSOR2);
+
+  //check for change
+  if (m1 != mid_sensor1)
+  {
+    mid_sensor1 = m1;
+    bleSerial.println("mid1" + String(m1));
+      midSensorsCharacteristic.setValue(mid_sensor1+mid_sensor2*2+48);
+
+  }
+  if (m2 != mid_sensor2)
+  {
+    mid_sensor2 = m2;
+    bleSerial.println("mid2" + String(m2));
+    //can be 0 or 1 or 2 or 3
+     midSensorsCharacteristic.setValue(mid_sensor1+mid_sensor2*2+48);
+
+
+
+  }
+}
+
 void calibrateChangeModeWritten(BLECentral &central, BLECharacteristic &characteristic){
 
   unsigned char buffer = characteristic.value()[0];
@@ -364,6 +509,9 @@ void solutionCharacteristicWritten(BLECentral &central, BLECharacteristic &chara
     Serial.println("Authenticated");
     authCharacteristic.setValue('1');
     Auth = 2;
+
+    //wake up motors 
+    //digitalWrite(MOTORS_SLEEP, HIGH);
   }
 }
 
@@ -428,6 +576,8 @@ void blePeripheralDisconnectHandler(BLECentral &central)
   blinkLed(1, 200);
 
   Auth = 0;
+  //sleep motors
+  //digitalWrite(MOTORS_SLEEP, LOW);
 }
 
 void blePeripheralRemoteServicesDiscoveredHandler(BLECentral &central)
@@ -435,6 +585,74 @@ void blePeripheralRemoteServicesDiscoveredHandler(BLECentral &central)
   Serial.print(F("Remote Services Discovered event, central: "));
   Serial.println(central.address());
   blinkLed(1, 200);
+}
+
+void testCharacteristicWritten(BLECentral &central, BLECharacteristic &characteristic)
+{
+
+  bleSerial.println("testCharacteristicWritten");
+
+  int h = isrmx.read(0x01);
+  bleSerial.println(h);
+  int l = isrmx.read(0x02);
+  bleSerial.println(l);
+  
+}
+
+void manualMotorControlCharacteristicWritten(BLECentral &central, BLECharacteristic &characteristic)
+{
+  bleSerial.println("manualMotorControlCharacteristicWritten");
+  unsigned char buffer = characteristic.value()[0] - 48;
+  bleSerial.println(buffer);
+
+  if (buffer == MOTOR1_FORWARD){
+
+    bleSerial.println("MOTOR1_FORWARD");
+
+    //move motor 1 forward for 100ms
+    digitalWrite(MOTOR1_PIN1, HIGH);
+    delay(200);
+    digitalWrite(MOTOR1_PIN1, LOW);
+
+  }
+  else if (buffer == MOTOR1_BACKWARD){
+
+    bleSerial.println("MOTOR1_BACKWARD");
+
+    //move motor 1 backward for 100ms
+    digitalWrite(MOTOR1_PIN2, HIGH);
+    delay(200);
+    digitalWrite(MOTOR1_PIN2, LOW);
+
+  }
+  else if (buffer == MOTOR2_FORWARD){
+
+    bleSerial.println("MOTOR2_FORWARD");
+
+    //move motor 2 forward for 100ms
+    digitalWrite(MOTOR2_PIN1, HIGH);
+    delay(200);
+    digitalWrite(MOTOR2_PIN1, LOW);
+
+  }
+  else if (buffer == MOTOR2_BACKWARD){
+
+    bleSerial.println("MOTOR2_BACKWARD");
+
+    //move motor 2 backward for 100ms
+    digitalWrite(MOTOR2_PIN2, HIGH);
+    delay(200);
+    digitalWrite(MOTOR2_PIN2, LOW);
+
+  }
+  
+
+   
+
+  
+  
+
+  
 }
 
 void blinkLed(int times, int delaytime)
@@ -445,6 +663,29 @@ void blinkLed(int times, int delaytime)
     delay(delaytime);
     digitalWrite(LED_PIN, LOW);
   }
+}
+int compare(const void *a, const void *b) {
+    float fa = *(const float *)a;
+    float fb = *(const float *)b;
+    return (fa > fb) - (fa < fb);
+}
+
+void median_filter(const float *input, float *output, size_t signal_length, size_t filter_size) {
+    size_t half_filter_size = filter_size / 2;
+    float window[filter_size];
+
+    for (size_t i = 0; i < signal_length; ++i) {
+        size_t start = (i < half_filter_size) ? 0 : i - half_filter_size;
+        size_t end = (i + half_filter_size >= signal_length) ? signal_length - 1 : i + half_filter_size;
+        size_t window_length = end - start + 1;
+
+        for (size_t j = 0; j < window_length; ++j) {
+            window[j] = input[start + j];
+        }
+
+        qsort(window, window_length, sizeof(float), compare);
+        output[i] = window[window_length / 2];
+    }
 }
 
 bool fft(void *opaque)
@@ -506,6 +747,10 @@ bool fft(void *opaque)
   {
     similar_num_of_1_0s = true;
   }
+
+  //bleSerial.println("read ones: " + String(read1));
+
+  
   // sampling at 5000 Hz
 
    for (int i = 0; i < (256 - 1UL); i += 2)
@@ -533,10 +778,12 @@ bool fft(void *opaque)
   if (similar_num_of_1_0s)
   {
 
-    // for (int i = 0; i < (256 - 1UL); i += 2)
-    // {
-    //   Serial.println(m_fft_input_f64[i]);
-    // }
+    q7_t input_signal[256]; //save a copy of the input signal
+
+    for (int i = 0; i < (256 - 1UL); i += 2)
+    {
+        input_signal[i / 2] = m_fft_input_f64[i] > (256 - 20) ? (q7_t)1 : (q7_t)0;
+    }
 
 
     
@@ -651,42 +898,114 @@ bool fft(void *opaque)
 
   
 
-    // int sample_rate =  frequency * 1000; // Desired sampling rate (in Hz)
-    // int freq =  frequency_of_max_bin; // Frequency of the square wave (in Hz)
-    // int amplitude = 1; // Amplitude of the square wave
+    int sample_rate =  frequency * 1000; // Desired sampling rate (in Hz)
+    int freq =  frequency_of_max_bin; // Frequency of the square wave (in Hz)
+    int amplitude = 1; // Amplitude of the square wave
 
-    // double ti = 0.0; // Time index variable
+    double ti = 0.0; // Time index variable
 
-    // //Serial.println(key_signal_tmp);
+    //Serial.println(key_signal_tmp);
 
-    // // Generate and output square wave samples
-    //  for (int i = 0; i < (256 - 1UL); i += 2)
-    // {
-
-    //     // Increment time index by a single sample interval
-    //     ti += 1.0 / sample_rate;
-
-    //     // Compute the value of the current sample
-    //     int sample = (sin(2 * PI * freq * ti) >= 0 ? 459 : 3);
-
-    //     m_fft_input_f64[i] = (float32_t)sample;
-    //     m_fft_input_f64[i + 1] = 0.0;
-
-    //     //Serial.print(sample);
+    //take every second value of  m_fft_input_f64 and put it in the second half of the array
+    // int j = 0;
+    // for (int i = 2; i < (256 - 1UL); i += 2){
+    //   m_fft_input_f64[j] = m_fft_input_f64[i] > 256/2 -20 ? 1 : 0;
+    //   j++;
     // }
+
+    //bleSerial.print(String( m_fft_input_f64[0] ) + "rrr");
+
+
+
+    // Generate and output square wave samples
+     for (int i = 128; i < 256; i += 1)
+    {
+
+        // Increment time index by a single sample interval
+        ti += 1.0 / sample_rate;
+
+        // Compute the value of the current sample
+        q7_t sample = sin(2 * PI * freq * ti) >= 0 ? (q7_t)1 : (q7_t)0;
+
+        input_signal[i] = (q7_t) sample;
+        //m_fft_input_f64[i + 1] = 0.0;
+
+        //Serial.print(sample);
+    }
+
+    //FIRST half is the m_fft_input_f64 is the signal that was read 
+    //and the second half is the ideal signal that was generated
+    //based on the frequency that was detected
+
+    //q7_t result_corelation[32 * 2 - 1];
+
+    q31_t max_dot_product = (q31_t)0;
+    int max_dot_product_index = 0;
+    for (int i = 0; i < 128; i++){
+      //do dot product
+      q31_t res;
+      roll_signal(&input_signal[128], FFT_TEST_COMP_SAMPLES_LEN/2, 1);
+
+      arm_dot_prod_q7(input_signal, &input_signal[128], 128, &res);
+      if (res > max_dot_product){
+        max_dot_product = res;
+        max_dot_product_index = i;
+        
+      }
+
+    }
+
+    //roll the ideal signal so that it matches the read signal
+    roll_signal(&input_signal[128], FFT_TEST_COMP_SAMPLES_LEN/2, max_dot_product_index);
+
+
+
+
+    // arm_correlate_q7(input_signal, 32, &input_signal[128], 32, result_corelation);
+    // uint32_t max_correlation_index;
+    // q7_t max_correlation_value;
+    // arm_max_q7(&result_corelation[0], 32, &max_correlation_value, &max_correlation_index);
+    // for (int i = 0; i < 32 * 2 - 1; i++){
+    //   bleSerial.print(result_corelation[i]);
+    // }
+    // bleSerial.println("");
+    //roll the ideal signal so that it matches the read signal
+    //roll_signal(&input_signal[128], FFT_TEST_COMP_SAMPLES_LEN/2, max_correlation_index);
+
+    //print both signals side by side
+    // for (int i = 0; i < FFT_TEST_COMP_SAMPLES_LEN/2; i++){
+    //   Serial.print(input_signal[i]);
+    //   Serial.print(" ");
+    //   Serial.println(input_signal[i + FFT_TEST_COMP_SAMPLES_LEN/2]);
+    // }
+
+    //compare the two signals using arm amth
+    int sum = 0;
+    for (int i = 0; i < FFT_TEST_COMP_SAMPLES_LEN/2; i++){
+      sum += abs(input_signal[i] - input_signal[i + FFT_TEST_COMP_SAMPLES_LEN/2]);
+    }
+    bleSerial.println("poss sum " + String(sum));
+    bleSerial.println("sample rate " + String(frequency * 1000) + " hz");
+
+    if (sum < 57){
+
+      //57 threshold passes through 20% noise 
+      bleSerial.println("valid");
+    } else {
+      bleSerial.println("not detected");
+    }
+    
+
+
+
+
+
+
+
+
+
      
 
-    //  fft_process(m_fft_input_f64,
-    //             &arm_cfft_sR_f32_len128,
-    //             m_fft_output_f64,
-    //             FFT_TEST_OUT_SAMPLES_LEN);
-
-    // m_fft_output_f64[0] = 0;
-
-    // for (int i = 0; i < (256 - 1UL); i += 2)
-    // {
-    //   Serial.println(m_fft_input_f64[i]);
-    // }
 
 
             
@@ -707,30 +1026,13 @@ bool fft(void *opaque)
         //   Serial.println("not detected");
 
         // }
-
-
-
-
-
-      
-
-
-
-      
-
-
-
-
-
-      
-
       
       Serial.println("poss " + String(frequency_of_max_bin) + " Hz ons" + String(read1) + "sample rate " + String(frequency * 1000) + " hz" + "percentage " + String(percentage) + "max value " + String(max_value));
       // this eqates to 1 second of cooldown
       //bleSerial.println("poss " + String(frequency_of_max_bin) + " Hz ons" + String(read1) + "sample rate " + String(frequency * 1000) + " hz");
 
       String log = "{\"f\":" + String(frequency_of_max_bin) + ",\"s\":" + String(frequency * 1000) + ",\"p\":" + String(percentage) + ",\"m\":" + String(max_value) + ",\"i\":" + String(max_val_index) + "}";
-      bleSerial.println(log);
+      //bleSerial.println(log);
       cool_down = 20;
 
       
@@ -917,4 +1219,19 @@ uint32_t fastAnalogRead( uint32_t ulPin=4 )
   NRF_ADC->ENABLE = 0;
 
   return value;
+}
+
+void roll_signal(q7_t *signal, int n, int shift) {
+    q7_t temp[n];
+    int abs_shift = abs(shift) % n;
+    
+    if (shift > 0) {
+        memcpy(temp, signal + n - abs_shift, abs_shift * sizeof(q7_t));
+        memmove(signal + abs_shift, signal, (n - abs_shift) * sizeof(q7_t));
+        memcpy(signal, temp, abs_shift * sizeof(q7_t));
+    } else if (shift < 0) {
+        memcpy(temp, signal, abs_shift * sizeof(q7_t));
+        memmove(signal, signal + abs_shift, (n - abs_shift) * sizeof(q7_t));
+        memcpy(signal + n - abs_shift, temp, abs_shift * sizeof(q7_t));
+    }
 }
