@@ -19,29 +19,29 @@
 ** OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 **  USE OR OTHER DEALINGS IN THE SOFTWARE.
 ****************************************************************************/
- #define ISMRX_REG_POWER_CFG                 0x00
-#define ISMRX_REG_CFG                       0x01
-#define ISMRX_REG_CTRL                      0x02
-#define ISMRX_REG_OSC_FREQ                  0x03
-#define ISMRX_REG_OFF_TIMER_MSB             0x04
-#define ISMRX_REG_OFF_TIMER_LSB             0x05
-#define ISMRX_REG_CPU_RECOVERY_TIME         0x06
-#define ISMRX_REG_RF_SETTLE_TIMER_MSB       0x07
-#define ISMRX_REG_RF_SETTLE_TIMER_LSB       0x08
-#define ISMRX_REG_STATUS                    0x09
-#define ISMRX_REG_AGC_DWELL_TIMER           0x0A
+#define ISMRX_REG_POWER_CFG 0x00
+#define ISMRX_REG_CFG 0x01
+#define ISMRX_REG_CTRL 0x02
+#define ISMRX_REG_OSC_FREQ 0x03
+#define ISMRX_REG_OFF_TIMER_MSB 0x04
+#define ISMRX_REG_OFF_TIMER_LSB 0x05
+#define ISMRX_REG_CPU_RECOVERY_TIME 0x06
+#define ISMRX_REG_RF_SETTLE_TIMER_MSB 0x07
+#define ISMRX_REG_RF_SETTLE_TIMER_LSB 0x08
+#define ISMRX_REG_STATUS 0x09
+#define ISMRX_REG_AGC_DWELL_TIMER 0x0A
 
 /**
  * @brief ISM RX description setting.
  * @details Specified setting for description of ISM RX Click driver.
  */
-#define ISMRX_MODULATION_NULL               0
-#define ISMRX_MODULATION_ASK                1
-#define ISMRX_MODULATION_FSK                2
+#define ISMRX_MODULATION_NULL 0
+#define ISMRX_MODULATION_ASK 1
+#define ISMRX_MODULATION_FSK 2
 
-#define ISMRX_RECEIVE_MODE_NULL             0
-#define ISMRX_RECEIVE_MODE_RX               3
-#define ISMRX_RECEIVE_MODE_DRX              4
+#define ISMRX_RECEIVE_MODE_NULL 0
+#define ISMRX_RECEIVE_MODE_RX 3
+#define ISMRX_RECEIVE_MODE_DRX 4
 
 typedef enum
 {
@@ -56,53 +56,49 @@ typedef enum
  * @brief ISM RX Click Driver.
  */
 
-
 /**
  * @brief Dummy data.
  * @details Definition of dummy data.
  */
-#define DUMMY  0x00
+#define DUMMY 0x00
 
-#define WRITE_DATA_CMD                  0x10
-#define READ_DATA_CMD                   0x20
-#define MASTER_RESET_CMD                0x30
+#define WRITE_DATA_CMD 0x10
+#define READ_DATA_CMD 0x20
+#define MASTER_RESET_CMD 0x30
 
-#define ENABLE_DISALBE_MASK_VAL         0x1
-#define OFF_TIMER_PRESCALE_MASK_VAL     0x3
+#define ENABLE_DISALBE_MASK_VAL 0x1
+#define OFF_TIMER_PRESCALE_MASK_VAL 0x3
 
-#define CFG_MATRIX_DATA                 19
+#define CFG_MATRIX_DATA 19
 
-#define COMMUNICATION_DELAY             1
-
+#define COMMUNICATION_DELAY 1
 
 #include "ISRMX.h"
 
-//#define RH_SPI_WRITE_MASK 0x10 change this in RHGenericSPI.h
+// #define RH_SPI_WRITE_MASK 0x10 change this in RHGenericSPI.h
 
-//class
-ISRMX::ISRMX(uint8_t slaveSelectPin, uint8_t interruptPin, RHGenericSPI& spi) :
-    RHSPIDriver(slaveSelectPin, spi)
-   
+// class
+ISRMX::ISRMX(uint8_t slaveSelectPin, uint8_t interruptPin, RHGenericSPI &spi) : RHSPIDriver(slaveSelectPin, spi)
+
 {
     modulation = ISMRX_MODULATION_NULL;
     receive_mode = ISMRX_RECEIVE_MODE_NULL;
 }
 
-//init
+// init
 bool ISRMX::init()
 {
     if (!RHSPIDriver::init())
-	return false;
+        return false;
 
     // Reset the ISM RX
     bool ok = reset();
-    Serial.println("reset" + ok? "true" : "false");
+    Serial.println("reset" + ok ? "true" : "false");
 
     // Set the default configuration
-   default_cfg();
-   
-  //fsk_config();
+    default_cfg();
 
+    // fsk_config();
 
     return ok;
 }
@@ -110,18 +106,15 @@ bool ISRMX::init()
 bool ISRMX::change_modulation(uint8_t modulation)
 {
 
-    
-
     delay(20);
 
     if (modulation == ISMRX_MODULATION_ASK)
     {
 
         Serial.println("ASK");
-       default_cfg();
+        default_cfg();
 
-       return true;
-
+        return true;
     }
     else if (modulation == ISMRX_MODULATION_FSK)
     {
@@ -134,11 +127,10 @@ bool ISRMX::change_modulation(uint8_t modulation)
     {
         return false;
     }
-    //TODO CHECK IF SENSOR IS OK
-    
+    // TODO CHECK IF SENSOR IS OK
 }
 
-//reset
+// reset
 bool ISRMX::reset()
 {
 
@@ -147,79 +139,79 @@ bool ISRMX::reset()
     ATOMIC_BLOCK_START;
     _spi.beginTransaction();
     selectSlave();
-    status = _spi.transfer(MASTER_RESET_CMD); //send master reset command
-    _spi.transfer(0x0); 
+    status = _spi.transfer(MASTER_RESET_CMD); // send master reset command
+    _spi.transfer(0x0);
     delayMicroseconds(1);
     deselectSlave();
     _spi.endTransaction();
     ATOMIC_BLOCK_END;
     delay(100);
     return status;
-
-   
-
-
 }
 
-//default_cfg
+// default_cfg
 void ISRMX::default_cfg()
 {
-    //set modulation
+    // set modulation
     modulation = ISMRX_MODULATION_ASK;
-    //set receive mode
+    // set receive mode
     receive_mode = ISMRX_RECEIVE_MODE_RX;
 
     spiWrite(ISMRX_REG_POWER_CFG, 0xE6);
-   
+
     spiWrite(ISMRX_REG_CFG, 0x40);
-    
+
     spiWrite(ISMRX_REG_CTRL, 0x06);
     spiWrite(ISMRX_REG_OSC_FREQ, 0x84);
-    
-   
-
-   
-
 }
 
-void ISRMX::fsk_config(){
+void ISRMX::sleep_config()
+{
+    // set modulation
+    modulation = ISMRX_MODULATION_ASK;
+    // set receive mode
+    receive_mode = ISMRX_RECEIVE_MODE_RX;
+
+    spiWrite(ISMRX_REG_POWER_CFG, 0xE7); // chenge sleep bit (0 -> 1) at position 0 (LSB)
+
+    spiWrite(ISMRX_REG_CFG, 0x40);
+
+    spiWrite(ISMRX_REG_CTRL, 0x06);
+    spiWrite(ISMRX_REG_OSC_FREQ, 0x84);
+}
+
+void ISRMX::fsk_config()
+{
     modulation = ISMRX_MODULATION_ASK;
     receive_mode = ISMRX_RECEIVE_MODE_RX;
 
-
-            // ismrx_generic_write( ctx, ISMRX_REG_POWER_CFG, 0x78 );
-            // ismrx_generic_write( ctx, ISMRX_REG_CFG, 0x60 );
-            // ismrx_generic_write( ctx, ISMRX_REG_CTRL, 0x01 );
-            // ismrx_generic_write( ctx, ISMRX_REG_OSC_FREQ, 0x84 );
-
+    // ismrx_generic_write( ctx, ISMRX_REG_POWER_CFG, 0x78 );
+    // ismrx_generic_write( ctx, ISMRX_REG_CFG, 0x60 );
+    // ismrx_generic_write( ctx, ISMRX_REG_CTRL, 0x01 );
+    // ismrx_generic_write( ctx, ISMRX_REG_OSC_FREQ, 0x84 );
 
     spiWrite(ISMRX_REG_POWER_CFG, 0x78);
     spiWrite(ISMRX_REG_CFG, 0x60);
     spiWrite(ISMRX_REG_CTRL, 0x01);
     spiWrite(ISMRX_REG_OSC_FREQ, 0x84);
-
-
-    
 }
 
-
-
-//read register
+// read register
 
 uint8_t ISRMX::read(uint8_t reg)
 {
 
-     uint8_t val = 0;
+    uint8_t val = 0;
     ATOMIC_BLOCK_START;
     _spi.beginTransaction();
     selectSlave();
-    _spi.transfer(reg | 0x02); //read command
-    val = _spi.transfer(0); // The written value is ignored, reg value is read
+    _spi.transfer(reg | 0x02); // read command
+    val = _spi.transfer(0);    // The written value is ignored, reg value is read
     deselectSlave();
     _spi.endTransaction();
     ATOMIC_BLOCK_END;
     return val;
-   return spiRead(reg);
+    return spiRead(reg);
 }
 
 bool ISRMX::available()
@@ -227,27 +219,21 @@ bool ISRMX::available()
     return true;
 }
 
-bool ISRMX::recv(uint8_t* buf, uint8_t* len)
+bool ISRMX::recv(uint8_t *buf, uint8_t *len)
 {
     return true;
 }
 
-bool ISRMX::send(const uint8_t* data, uint8_t len)
+bool ISRMX::send(const uint8_t *data, uint8_t len)
 {
     return true;
 }
 
-//maxMessageLength
+// maxMessageLength
 uint8_t ISRMX::maxMessageLength()
 {
     return 50; // dont know what to put here
 }
-
-
-
-
-
-
 
 // // void ismrx_cfg_setup ( ismrx_cfg_t *cfg )
 // // {
@@ -269,7 +255,7 @@ uint8_t ISRMX::maxMessageLength()
 
 // //     ctx->modulation = ISMRX_MODULATION_NULL;
 // //     ctx->receive_mode = ISMRX_RECEIVE_MODE_NULL;
-    
+
 // //     spi_cfg.sck  = cfg->sck;
 // //     spi_cfg.miso = cfg->miso;
 // //     spi_cfg.mosi = cfg->mosi;
@@ -305,7 +291,7 @@ uint8_t ISRMX::maxMessageLength()
 // err_t ismrx_task_init ( ismrx_t *ctx, ismrx_cfg_t *cfg )
 // {
 //     spi_master_close( &ctx->spi );
-    
+
 //     err_t error_flag = digital_out_init( &ctx->mosi, cfg->mosi );
 //     error_flag |= digital_in_init( &ctx->miso, cfg->miso );
 //     return error_flag;
@@ -324,7 +310,7 @@ uint8_t ISRMX::maxMessageLength()
 //         ismrx_generic_write( ctx, ISMRX_REG_OFF_TIMER_MSB, 0x00 );
 //         ismrx_generic_write( ctx, ISMRX_REG_CPU_RECOVERY_TIME, 0x01 );
 //         ismrx_generic_write( ctx, ISMRX_REG_RF_SETTLE_TIMER_LSB, 0x01 );
-//         ismrx_generic_write( ctx, ISMRX_REG_RF_SETTLE_TIMER_MSB, 0x00 );   
+//         ismrx_generic_write( ctx, ISMRX_REG_RF_SETTLE_TIMER_MSB, 0x00 );
 //     }
 //     else if ( ISMRX_RECEIVE_MODE_RX == ctx->receive_mode )
 //     {
@@ -351,7 +337,7 @@ uint8_t ISRMX::maxMessageLength()
 //     {
 //         return ISMRX_CONTEXT_RECEIVE_MODE_ERROR;
 //     }
-    
+
 //     return ISMRX_OK;
 // }
 
@@ -375,7 +361,7 @@ uint8_t ISRMX::maxMessageLength()
 // err_t ismrx_generic_read ( ismrx_t *ctx, uint8_t reg, uint8_t *data_out )
 // {
 //     uint8_t temp[ 2 ] = { 0 };
-    
+
 //     temp[ 0 ] = reg & 0x0F;
 //     temp[ 0 ] |= READ_DATA_CMD;
 
@@ -399,12 +385,12 @@ uint8_t ISRMX::maxMessageLength()
 // //     uint8_t write_data[ 2 ] = { 0x00 };
 
 // //     write_data[ 0 ] = MASTER_RESET_CMD;
-    
+
 // //     spi_master_select_device( ctx->chip_select );
 // //     err_t error_flag = spi_master_write( &ctx->spi, write_data, 2 );
 // //     Delay_1us(  );
 // //     spi_master_deselect_device( ctx->chip_select );
-    
+
 // //     Delay_1sec(  );
 // //     return error_flag;
 // // }

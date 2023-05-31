@@ -22,6 +22,8 @@ public:
 
 void fsk_config();
 
+void sleep_config();
+
 
     uint8_t read(uint8_t reg);
 
